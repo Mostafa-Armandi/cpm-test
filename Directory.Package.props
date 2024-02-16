@@ -1,5 +1,8 @@
 <Project>
   <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <PropertyGroup>
     <FluentValidationVersion>11.5.2</FluentValidationVersion>
   </PropertyGroup>
   <ItemGroup>
