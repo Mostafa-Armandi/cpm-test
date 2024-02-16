@@ -1,15 +1,12 @@
 <Project>
   <PropertyGroup>
-    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ObservabilityLibraryVersion>2.9.0</ObservabilityLibraryVersion>
+    <FluentValidationVersion>11.5.2</FluentValidationVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="AutoFixture" Version="4.18.1" />
-    <PackageVersion Include="AutoFixture.AutoMoq" Version="4.18.1" />
-    <PackageVersion Include="FluentValidation" Version="11.8.0" />
-    <PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.0" />
+    <PackageVersion Include="AutoFixture" Version="4.17.0" />
+    <PackageVersion Include="AutoFixture.AutoMoq" Version="4.17.0" />
+    <PackageVersion Include="FluentValidation" Version="$(FluentValidationVersion)" />
+    <PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="$(FluentValidationVersion)" />
     <PackageVersion Include="Google.Protobuf" Version="3.24.3" />
     <PackageVersion Include="Gremlin.Net" Version="3.7.0" />
     <PackageVersion Include="Grpc.AspNetCore.Server" Version="2.57.0" />
