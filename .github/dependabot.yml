@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "nuget"
+    directory: "/"
+    schedule:
+      interval: daily
+    groups:
+      nuget-dependencies:
+        patterns:
+          - "*" # Single PR for all updates
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    commit-message:
+      prefix: "chore: [.NET]"
